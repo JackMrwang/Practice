@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context=".Fifthquestion.ServiceActivity">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:background="#FF9800"
+       android:orientation="vertical"
+       android:layout_height="70dp">
+       <TextView
+           android:text="Setting"
+           android:textSize="50dp"
+           android:layout_gravity="left"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent" />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="服务器地址:"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <EditText
+            android:hint="192.168.1.106"
+            android:id="@+id/et_adresss"
+            android:inputType="textUri"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:singleLine="false"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/port"
+            android:text="端口号:"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="40dp" />
+        <EditText
+            android:hint="8080"
+            android:id="@+id/et_username"
+            android:inputType="number"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:singleLine="false"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:text="保存"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:id="@+id/btn_cancel"
+            android:text="取消"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

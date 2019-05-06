@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Secondquestion.LoginActivity">
+    <LinearLayout
+        android:background="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:layout_margin="5dp"
+            android:src="@drawable/header"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:text="智能交通"
+            android:textSize="25dp"
+            android:layout_margin="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网络设置" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="注册" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="请输入用户名"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登陆" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="wrap_content"
+            android:hint="请输入密码"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/chk_passoword"
+            android:layout_width="wrap_content"
+            android:text="记住密码"
+            android:layout_height="wrap_content" />
+
+
+        <CheckBox
+            android:id="@+id/chk_auto_login"
+            android:layout_width="wrap_content"
+            android:text="自动登陆"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
